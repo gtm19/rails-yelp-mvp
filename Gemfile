@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'autoprefixer-rails'
-gem 'font-awesome-sass', '~> 5.6.1'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem 'simple_form'
 gem 'faker'
 
