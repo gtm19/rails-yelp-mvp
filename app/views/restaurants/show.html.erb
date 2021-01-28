@@ -2,6 +2,7 @@
   <h1 class="display-1"><%= @restaurant.name %></h1>
   <h3><%= @restaurant.address %></h1>
   <h4><%= icon("fas", "phone", @restaurant.phone_number) %></h4>
+  <%= content_tag :h4, content_tag(:span, @restaurant.category, class: "badge badge-dark") %>
 </div>
 <div id="reviews">
   
