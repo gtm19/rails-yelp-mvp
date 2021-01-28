@@ -1,0 +1,7 @@
+<h1 class="display-1"><%= @restaurant.name %></h1>
+<h2>Add Review</h2>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content, label: "Let rip with your unfettered opinion of #{@restaurant.name}" %>
+  <%= f.input :rating, input_html: { min: '0', max: '5' } %>
+  <%= f.submit "Add Review", class: "btn btn-dark" %>
+<% end %>
